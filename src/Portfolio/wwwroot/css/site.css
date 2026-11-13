@@ -189,3 +189,13 @@ h1,h2,h3,p,a,button,span,b,strong,small{overflow-wrap:break-word}
   .float-card-bottom{bottom:0}
   .portrait-tag{font-size:9px}
 }
+
+
+/* Client-facing proof points: make seniority and delivery strengths easy to scan. */
+.proof-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding-top:24px;padding-bottom:24px}
+.proof-strip article{min-width:0;padding:18px 16px;border:1px solid var(--line);border-radius:8px;background:linear-gradient(145deg,#171624,#101019)}
+.proof-strip strong,.proof-strip span{display:block}
+.proof-strip strong{font:700 16px var(--display);letter-spacing:-.3px;color:#d4c7ff;margin-bottom:5px}
+.proof-strip span{font-size:10px;line-height:1.6;color:#9996a6}
+@media(max-width:760px){.proof-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.proof-strip article{padding:15px 13px}}
+@media(max-width:380px){.proof-strip{grid-template-columns:minmax(0,1fr)}.proof-strip strong{font-size:15px}}
