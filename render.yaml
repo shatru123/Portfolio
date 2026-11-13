@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: shatrughna-portfolio
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: DOTNET_PRINT_TELEMETRY_MESSAGE
+        value: "false"
