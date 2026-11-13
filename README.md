@@ -22,7 +22,7 @@ This repository includes `render.yaml` and a multi-stage Dockerfile. Create a Bl
 
 ## Portrait asset
 
-Place the portrait at `src/Portfolio/wwwroot/images/shatrughna.jpg`. The page references this local path and displays an initials fallback if the image is missing. The matching image currently lives in the Learning repository at `src/LearningOS/wwwroot/images/shatrughna.jpg`.
+The hero portrait currently reuses the existing creator portrait from the public Learning repository via its raw GitHub asset URL. This keeps the same photo used in Learning without duplicating the image. For a self-contained deployment, download that image and place it at `src/Portfolio/wwwroot/images/shatrughna.jpg`, then change the hero image source to `/images/shatrughna.jpg`.
 
 ## Contact form
 
