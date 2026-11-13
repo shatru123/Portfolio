@@ -159,3 +159,33 @@ h1,h2,h3,p,a,button,span,b,strong,small{overflow-wrap:break-word}
  .experience-timeline .timeline-row h3{font-size:16px;line-height:1.35}
  .experience-timeline .timeline-row p{max-width:none}
 }
+
+
+/* Hero portrait labels: keep the floating feature cards clear of the portrait caption. */
+.hero-visual{height:540px}
+.portrait-tag{left:15px;right:15px;bottom:15px;min-height:42px;justify-content:center;z-index:2}
+.float-card{z-index:4;max-width:235px}
+.float-card-top{top:48px;right:-12px}
+.float-card-bottom{left:-12px;right:auto;bottom:-18px}
+@media(max-width:1100px){
+  .hero-visual{height:530px}
+  .float-card-top{right:-4px}
+  .float-card-bottom{left:-4px;bottom:-14px}
+}
+@media(max-width:650px){
+  .hero-visual{height:455px;overflow:visible;margin-bottom:16px}
+  .portrait-frame{width:min(260px,74vw);height:315px}
+  .portrait-tag{left:12px;right:12px;bottom:12px;padding:9px 10px;font-size:10px}
+  .float-card{max-width:min(220px,72%);padding:10px 12px}
+  .float-card-top{top:20px;right:0}
+  .float-card-bottom{left:0;right:auto;bottom:0}
+  .visual-caption{bottom:-9px;right:0;font-size:8px}
+}
+@media(max-width:380px){
+  .hero-visual{height:430px}
+  .portrait-frame{width:min(235px,72vw);height:290px}
+  .float-card{max-width:190px;padding:8px 10px}
+  .float-card-top{top:14px}
+  .float-card-bottom{bottom:0}
+  .portrait-tag{font-size:9px}
+}
