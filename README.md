@@ -2,6 +2,14 @@
 
 Responsive personal portfolio built with ASP.NET Core 8 and static HTML/CSS/JavaScript. No Node build step or database is required.
 
+## Live portfolio
+
+**Website:** [https://portfolio-42ve.onrender.com/](https://portfolio-42ve.onrender.com/)
+
+**Health check:** [https://portfolio-42ve.onrender.com/health](https://portfolio-42ve.onrender.com/health)
+
+Hosted on Render using the repository's Docker configuration. Availability depends on the Render service plan and deployment status.
+
 ## Run locally
 
 ```bash
@@ -12,7 +20,7 @@ dotnet run --project src/Portfolio/Portfolio.csproj
 
 - `GET /health` returns HTTP 200 and a small JSON response when the web process is responding.
 - Render is configured with `healthCheckPath: /health`.
-- External monitor URL: `https://YOUR-SERVICE.onrender.com/health`.
+- External monitor URL: `https://portfolio-42ve.onrender.com/health`.
 
 A health endpoint reports application responsiveness; it does not itself prevent a host from sleeping or bypass plan limits.
 
